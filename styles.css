@@ -21,7 +21,7 @@ header{
     align-items: center;
     justify-content: space-evenly;
     padding: 1rem;
-    box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.205);
+    box-shadow: 1px 1px 7px rgba(0, 0, 0, 0.075);
 }
 .header-icons span, nav a{
     margin: 0 .3rem;
