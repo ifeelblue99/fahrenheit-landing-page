@@ -1,9 +1,10 @@
 :root{
+    --font-fmly: 'Raleway', sans-serif;
     --bg-clr: #F1F0F9;
     --font-clr: #9A9DAA;
 }
 *{
-    font-family: 'Raleway', sans-serif;
+    font-family: var(--font-fmly);
     padding: 0;
     margin: 0;
     border: none;
@@ -20,6 +21,9 @@ body{
 }
 /*header***************************************/
 header{
+    width: 100vw;
+    position: fixed;
+    top: 0;
     background-color: var(--bg-clr);
     display: flex;
     align-items: center;
@@ -30,7 +34,6 @@ header{
 .header-icons span, nav a{
     margin: 0 .3rem;
     color: var(--font-clr);
-    transition: border-bottom 1s ease-in-out;
 }
 #new-in-link{
     font-weight: 600;
@@ -42,8 +45,8 @@ header{
 }
 /*hover*/
 .header-icons span:hover, nav a:hover{
-    border-bottom: 2px rgb(24, 24, 24) dashed;
-
+    color: black;
+    border-bottom: 1px rgba(24, 24, 24, 0.562) dashed;
 }
 /*footer***************************************/
 footer{
@@ -53,21 +56,23 @@ footer{
     justify-content: space-evenly;
     align-items: center;
     background-color: white;
-    color: rgba(0, 0, 255, 0.664);
+    color: rgba(110, 110, 255, 0.664);
 }
 .footer-lists li{
     margin-top: .3rem;
     font-family: sans-serif;
     cursor: pointer;
-    color: gray;
+    color: rgb(177, 177, 177);
 }
 .footer-lists li::marker{
     content: "→  ";
-    color: rgba(0, 0, 255, 0.5);
+    color: rgba(77, 77, 255, 0.5);
     font-weight: bold;
 }
 .footer-list-holders{
+    --font-fmly:sans-serif;
     padding: 1rem;
+    font-size: .8rem;
 }
 footer button{
     cursor: pointer;
@@ -75,4 +80,9 @@ footer button{
     padding: .5rem;
     color: rgb(204, 204, 204);
     background-color: #32333E;
+    transition: all .25s ease-in;
+}
+footer button:hover{
+    transform: translateY(-5px);
+    border-radius: 15px;
 }

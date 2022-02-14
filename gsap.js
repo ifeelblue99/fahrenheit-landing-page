@@ -6,5 +6,5 @@ gsap.from("#header", {
     x: 0,
     ease: "elastic.out(1, .5)",
     opacity: 0,
-    scale: 0.5
+    scale: 0.1
 });
