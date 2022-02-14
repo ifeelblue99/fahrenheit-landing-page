@@ -88,8 +88,9 @@ header{
     font-weight: bold;
     color: rgba(77, 77, 255, 0.5);
 }
-#hero-price{
-    padding: .5rem 0;
+#hero-title{
+    --font-fmly:sans-serif;
+
 }
 /*check-boxes*/
 
@@ -131,4 +132,16 @@ footer button{
 footer button:hover{
     transform: translateY(-5px);
     border-radius: 15px;
+}
+
+/*contact dev.*******************************/
+.contact-links{
+    padding: .5rem ;
+    gap: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.icon-contact img{
+    max-width: 25px;
 }
