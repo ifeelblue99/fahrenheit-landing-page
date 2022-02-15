@@ -4,7 +4,7 @@ gsap.registerPlugin(ScrollTrigger);
 gsap.from("#header", {
     duration: 2.5,
     x: 0,
-    ease: "elastic.out(1, .5)",
+    ease: "elastic.out(1, 2)",
     opacity: 0,
     scale: 0.1
 });
@@ -13,7 +13,7 @@ gsap.from("#header", {
 gsap.from("#hero-img", {
     duration: 2.5,
     x: -3000,
-    ease: "elastic.out(1, .9)",
+    ease: "elastic.out(1, 3)",
     opacity: 0,
     scale: 0.1
 });
