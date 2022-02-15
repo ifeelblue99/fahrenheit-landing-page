@@ -2,9 +2,14 @@
     --font-fmly: 'Raleway', sans-serif;
     --bg-clr: #F1F0F9;
     --font-clr: #9A9DAA;
+    --font-clr-dark-blue:rgb(81, 122, 255);
+    --btn-bg-clr: #32333E;
 
     /*radio btn color*/
-    --red-radio-clr: rgb(255, 0, 0);
+    --pink-radio-clr: #F29D9E;
+    --orange-radio-clr: #F9BF7F;
+    --blue-radio-clr: #4975CB;
+    --soft-blue-radio-clr: #64CAF5;
 }
 
 *{
@@ -29,11 +34,14 @@ button{
     font-family: sans-serif;
     padding: .7rem;
     color: rgb(204, 204, 204);
-    background-color: #32333E;
+    background-color: var(--btn-bg-clr);
     transition: all .25s ease-in;
 }
 button:hover{
     transform: translateY(-5px);
+}
+button:active{
+    transform: scale(.92);
 }
 /*header***************************************/
 header{
@@ -90,42 +98,63 @@ header{
 }
 #hero-price{
     font-weight: bold;
-    color: rgba(77, 77, 255, 0.5);
+    color: var(--font-clr-dark-blue);
 }
 #hero-title{
     --font-fmly:sans-serif;
 
 }
-/*radio*btns*/
+/*radio*btns********/
 .radio-btn-holder{
     display: flex;
     gap: .8rem;
 }
 
+/**/
 #pink-radio-btn {
     appearance: none;
     margin: 0;
-    color:pink;
+    color: var(--pink-radio-clr);
     font: inherit;
     background-color: currentColor;
     width: 1.15em;
     height: 1.15em;
-    border: 0.15em solid pink;
     border-radius: 50%;
     display: grid;
     place-content: center;
 }
-#red-radio-btn {
+#orange-radio-btn {
     appearance: none;
     margin: 0;
-    background-color: var(--red-radio-clr);
+    background-color: var(--orange-radio-clr);
     width: 1.15em;
     height: 1.15em;
     border-radius: 50%;
     display: grid;
     place-content: center;
 }
-  
+#blue-radio-btn {
+    appearance: none;
+    margin: 0;
+    background-color: var(--blue-radio-clr);
+    width: 1.15em;
+    height: 1.15em;
+    border-radius: 50%;
+    display: grid;
+    place-content: center;
+}
+#soft-blu-radio-btn {
+    appearance: none;
+    margin: 0;
+    background-color: var(--soft-blue-radio-clr);
+    width: 1.15em;
+    height: 1.15em;
+    border-radius: 50%;
+    display: grid;
+    place-content: center;
+}
+
+/**/
 input[type="radio"]::before {
     content: "";
     width: 0.65em;
@@ -142,11 +171,19 @@ input[type="radio"]:checked::before {
   
   
 #pink-radio-btn:checked {
-    outline: max(2px, 0.15em) solid pink;
+    outline: max(2px, 0.15em) solid var(--pink-radio-clr);
     outline-offset: max(2px, 0.15em);
 }
-#red-radio-btn:checked {
-    outline: max(2px, 0.15em) solid red;
+#orange-radio-btn:checked {
+    outline: max(2px, 0.15em) solid var(--orange-radio-clr);
+    outline-offset: max(2px, 0.15em);
+}
+#blue-radio-btn:checked {
+    outline: max(2px, 0.15em) solid var(--blue-radio-clr);
+    outline-offset: max(2px, 0.15em);
+}
+#soft-blu-radio-btn:checked {
+    outline: max(2px, 0.15em) solid var(--soft-blue-radio-clr);
     outline-offset: max(2px, 0.15em);
 }
   
@@ -158,17 +195,17 @@ footer{
     justify-content: space-evenly;
     align-items: center;
     background-color: white;
-    color: rgba(110, 110, 255, 0.664);
+    color: var(--font-clr-dark-blue);
 }
 .footer-lists li{
     margin-top: .3rem;
     font-family: sans-serif;
     cursor: pointer;
-    color: rgb(177, 177, 177);
+    color: rgb(64, 85, 117);
 }
 .footer-lists li::marker{
     content: "→  ";
-    color: rgba(77, 77, 255, 0.5);
+    color: var(--font-clr-dark-blue);
     font-weight: bold;
 }
 .footer-list-holders{
@@ -180,8 +217,8 @@ footer button{
     cursor: pointer;
     font-family: sans-serif;
     padding: .5rem;
-    color: rgb(204, 204, 204);
-    background-color: #32333E;
+    color: rgb(233, 233, 233);
+    background-color: var(--btn-bg-clr);
     transition: all .25s ease-in;
 }
 footer button:hover{
