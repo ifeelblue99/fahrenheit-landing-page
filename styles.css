@@ -20,6 +20,40 @@
     box-sizing: border-box;
     text-decoration: none;
 }
+
+
+main{
+    height: 100vh;
+    position: relative;
+}
+/*aside*****************************************/
+aside{
+    max-width: 350px;
+    top: 50%;
+    position: absolute;
+    padding: 1rem;
+    color: white;
+    background-color: #3E4762;
+    display: inline-block;
+}
+aside pre{
+    border-bottom: 1px rgba(255, 255, 255, 0.274) solid;
+}
+.color-holder div{
+    display: flex;
+    flex-wrap: wrap;
+    margin: .5rem .2rem;
+    display: inline-block;
+    width: 20px;
+    border-radius: 50%;
+    height: 20px;
+}
+/*aside*****************************************/
+
+
+
+
+
 /*body*****************************************/
 body{
     display: flex;
@@ -224,6 +258,9 @@ footer button{
 footer button:hover{
     transform: translateY(-5px);
     border-radius: 15px;
+}
+footer button:active{
+    transform: scale(.9);
 }
 
 /*contact dev.*******************************/
