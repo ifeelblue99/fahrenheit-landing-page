@@ -40,6 +40,7 @@ aside p{
     border-bottom: 1px rgba(255, 255, 255, 0.274) solid;
 }
 .color-holder div{
+    cursor: pointer;
     display: flex;
     flex-wrap: wrap;
     margin: .5rem .2rem;
@@ -47,6 +48,10 @@ aside p{
     width: 20px;
     border-radius: 50%;
     height: 20px;
+    transition: transform .2s linear;
+}
+.color-holder div:hover{
+    transform: scale(1.05);
 }
 /*circles*/
 #div-circle-blue{
