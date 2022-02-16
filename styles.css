@@ -36,7 +36,7 @@ aside{
     background-color: #3E4762;
     display: inline-block;
 }
-aside pre{
+aside p{
     border-bottom: 1px rgba(255, 255, 255, 0.274) solid;
 }
 .color-holder div{
@@ -47,6 +47,31 @@ aside pre{
     width: 20px;
     border-radius: 50%;
     height: 20px;
+}
+/*circles*/
+#div-circle-blue{
+    background-color: #64CAF5;
+}
+#div-circle-orange{
+    background-color: #F29D9E;
+}
+#div-circle-red{
+    background-color: tomato;
+}
+#div-circle-green{
+    background-color: springgreen;
+}
+#div-circle-yellow{
+    background-color: #F9BF7F;
+}
+#div-circle-purple{
+    background-color: slateblue;
+}
+#div-circle-pink{
+    background-color: violet;
+}
+#div-circle-white{
+    background-color: white;
 }
 /*aside*****************************************/
 
