@@ -38,6 +38,7 @@ main{
     transition: all .3s ease-in-out;
 }
 .card:hover{
+    box-shadow: 1px 1px 5px black;
     background-color: white;
 }
 .card-info{
