@@ -21,64 +21,62 @@
     text-decoration: none;
 }
 
-
+/*main*****************************************/
 main{
-    height: 100vh;
-    position: relative;
-}
-/*aside*****************************************/
-aside{
-    max-width: 350px;
-    top: 50%;
-    position: absolute;
-    padding: 1rem;
-    color: white;
-    background-color: #3E4762;
-    display: inline-block;
-}
-aside p{
-    border-bottom: 1px rgba(255, 255, 255, 0.274) solid;
-}
-.color-holder div{
-    cursor: pointer;
     display: flex;
+    align-items: center;
+    justify-content: space-evenly;
     flex-wrap: wrap;
-    margin: .5rem .2rem;
-    display: inline-block;
-    width: 20px;
-    border-radius: 50%;
-    height: 20px;
-    transition: transform .2s linear;
 }
-.color-holder div:hover{
-    transform: scale(1.05);
+/*card***********/
+.card{
+    margin: 1rem;
+    display: flex;
+    max-width: 45vw;
+    align-items: center;
+    justify-content: space-evenly;
+    transition: all .3s ease-in-out;
 }
-/*circles*/
-#div-circle-blue{
-    background-color: #64CAF5;
-}
-#div-circle-orange{
-    background-color: #F29D9E;
-}
-#div-circle-red{
-    background-color: tomato;
-}
-#div-circle-green{
-    background-color: springgreen;
-}
-#div-circle-yellow{
-    background-color: #F9BF7F;
-}
-#div-circle-purple{
-    background-color: slateblue;
-}
-#div-circle-pink{
-    background-color: violet;
-}
-#div-circle-white{
+.card:hover{
     background-color: white;
 }
-/*aside*****************************************/
+.card-info{
+    padding: .5rem;
+}
+.card-price{
+    color: var(--font-clr-dark-blue);
+    font-weight: bold;
+}
+.card-title{
+    margin: .6rem 0;
+    font-weight: bold;
+}
+.card-button{
+    width: 100%;
+    background-color: transparent;
+    color: #32333E;
+    border: 1px solid #32333E;
+}
+.card-button:hover{
+    background-color: #32333E;
+    color: white;
+}
+.card-img-holder{
+    padding: 1rem;
+    background-color: white;
+    display: inline-block;
+}
+.card-img-holder img{
+    max-height: 250px;
+    max-width: 150px;
+    object-fit: cover;
+    transition: transform .3s ease-in-out;
+}
+.card-img-holder img:hover{
+    transform: scale(1.1);
+}
+/*card***********/
+/*main*****************************************/
 
 
 
