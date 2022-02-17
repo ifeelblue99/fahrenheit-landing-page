@@ -17,3 +17,9 @@ gsap.from("#hero-img", {
     opacity: 0,
     scale: 0.1
 });
+
+gsap.from(".hero-info", {
+    duration: 2.5,
+    x: 300,
+    opacity: 0,
+});

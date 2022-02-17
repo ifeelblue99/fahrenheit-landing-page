@@ -68,7 +68,7 @@ main{
 }
 .card-img-holder img{
     max-height: 250px;
-    max-width: 150px;
+    max-width: 45vw;
     object-fit: cover;
     transition: transform .3s ease-in-out;
 }
@@ -137,6 +137,7 @@ header{
 }
 /*hero***************************************/
 .hero{
+    min-height: 70vh;
     margin-top: 160px;
     display: flex;
     align-items: center;
